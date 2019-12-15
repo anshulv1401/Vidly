@@ -4,33 +4,38 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+
+        public Movie Model;
+
         // GET: Movies/Random
-        public ActionResult Random()
+        public ActionResult Index()
         {
-            var movie = new Movie() { Name = "Shrek!" };
-            //return View(movie);
-            return RedirectToAction("Index", "Home", new { page = 1, sortBy = "name" });
+            return View(GetMovies());
         }
 
-        public ActionResult Edit(int movieID)
+        public ActionResult Details(int Id)
         {
-            return Content("id = " + movieID);
+            Model = GetMovies().Where(x => x.Id == Id).FirstOrDefault();
+
+            if (Model == null)
+                return HttpNotFound();
+            else
+                return View(Model);
         }
 
-        public ActionResult Index(int? pageIndex, string sortBy)
+        public IEnumerable<Movie> GetMovies()
         {
-            if (!pageIndex.HasValue)
-                pageIndex = 1;
-            if (string.IsNullOrEmpty(sortBy))
+            return new List<Movie>
             {
-                sortBy = "Name";
-            }
-            return Content(string.Format("PageIndex  : {0}, Sortby : {1}", pageIndex, sortBy));
+                new Movie() { Id = 1, Name = "Wall E" },
+                new Movie() { Id = 2, Name = "Toy story 4" },
+            };
         }
     }
 }
