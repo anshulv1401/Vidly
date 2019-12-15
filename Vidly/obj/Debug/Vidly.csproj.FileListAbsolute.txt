@@ -67,7 +67,6 @@ E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\Microsoft.CodeDom.Providers
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
-E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\EntityFramework.dll
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\EntityFramework.SqlServer.dll
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\EntityFramework.xml
@@ -92,3 +91,9 @@ E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\roslyn\System.Net.Sockets.d
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\roslyn\System.Threading.Tasks.Extensions.dll
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribedToCustomer.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.addMemberShipType.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipType.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotaionToCustomername.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedNameColumnMembershipType.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateNameValueMembershipType.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.addBirthdateInCustomer.resources
