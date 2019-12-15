@@ -37,5 +37,23 @@ namespace Vidly.Controllers
             else
                 return View(Model);
         }
+
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewmodel = new NewCustomersViewModel()
+            {
+                MembershipTypes = membershipTypes
+            };
+            return View(viewmodel);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Customer customer)
+        {
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Customers");
+        }
     }
 }
