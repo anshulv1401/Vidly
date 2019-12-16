@@ -100,3 +100,5 @@ E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComp
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.addgenreIdinMovie.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.updateMovieTableWithValidation.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
