@@ -102,3 +102,12 @@ E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.addgenreIdinMovie.resources
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.updateMovieTableWithValidation.resources
 E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.updateMovieStockToByte.resources
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\System.Web.Http.dll
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\System.Web.Http.xml
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\AutoMapper.dll
+E:\Learn\Anshul.Vanawat\Source\repos\Vidly\Vidly\bin\AutoMapper.xml
