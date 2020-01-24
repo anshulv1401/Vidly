@@ -231,3 +231,4 @@ C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Microsoft.Owin.Security
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources

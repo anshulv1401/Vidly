@@ -235,6 +235,10 @@
     <Compile Include="Migrations\201912162035038_updateMovieStockToByte.designer.cs">
       <DependentUpon>201912162035038_updateMovieStockToByte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001090941467_SeedUsers.cs" />
+    <Compile Include="Migrations\202001090941467_SeedUsers.designer.cs">
+      <DependentUpon>202001090941467_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -600,6 +604,7 @@
     <Content Include="Views\Manage\ManageLogins.cshtml" />
     <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -644,6 +649,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912162035038_updateMovieStockToByte.resx">
       <DependentUpon>201912162035038_updateMovieStockToByte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001090941467_SeedUsers.resx">
+      <DependentUpon>202001090941467_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
