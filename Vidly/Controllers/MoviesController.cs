@@ -26,8 +26,11 @@ namespace Vidly.Controllers
         // GET: Movies/Random
         public ActionResult Index()
         {
-            List<Movie> movies = _context.Movies.Include(x => x.Genre).ToList();
-            return View(movies);
+            //List<Movie> movies = _context.Movies.Include(x => x.Genre).ToList();
+            if(User.IsInRole(RoleName.CanManageMovies))
+                return View("List");
+
+            return View("ReadOnlyList");
         }
 
         public ActionResult Details(int Id)
@@ -40,6 +43,7 @@ namespace Vidly.Controllers
                 return View(Model);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();

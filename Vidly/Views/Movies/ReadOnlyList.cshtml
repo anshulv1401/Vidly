@@ -4,24 +4,36 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@if (Model.Count() == 0)
-{
-    <text>We don't have any movies yet.</text>
-}
-else
-{
-    <div><h3>Movies</h3><br /></div>
-    <table class="table table-­bordered table-­hover”>">
+<div><h3>Movies</h3><br /></div>
+<table id="movies" class="table table-­bordered table-­hover”>">
+    <thead>
         <tr>
             <th>Movies</th>
             <th>Genre</th>
         </tr>
-        @foreach (var movie in Model)
-        {
-            <tr>
-                <td>@(Html.ActionLink(movie.Name, "Edit", new { Id = movie.Id }))</td>
-                <td>@movie.Genre.Name</td>
-            </tr>
-        }
-    </table>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            var table = $("#movies").DataTable({
+                ajax: {
+                    url: "/api/movies",
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data: "name"
+                    },
+                    {
+                        data: "genre.name"
+                    }
+                ]
+            });
+        });
+    </script>
 }
