@@ -233,3 +233,4 @@ C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Microsoft.Owin.Host.Sys
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicationUser.resources
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.cache
