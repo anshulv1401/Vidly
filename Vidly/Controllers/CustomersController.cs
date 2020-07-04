@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Data.Entity;
 using System.Linq;
-using System.Data.Entity;
-using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
@@ -24,7 +21,10 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            if (User.IsInRole(RoleName.CanManageCustomers) || User.IsInRole(RoleName.CanManageAll))
+                return View("List");
+
+            return View("ReadOnlyList");
         }
 
         public ActionResult Details(int Id)
@@ -37,7 +37,8 @@ namespace Vidly.Controllers
                 return View(Model);
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
+        [Authorize(Roles = RoleName.CanManageCustomers)]
+        [Authorize(Roles = RoleName.CanManageAll)]
         public ActionResult New()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
@@ -51,7 +52,8 @@ namespace Vidly.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = RoleName.CanManageMovies)]
+        [Authorize(Roles = RoleName.CanManageCustomers)]
+        [Authorize(Roles = RoleName.CanManageAll)]
         public ActionResult Save(Customer customer)
         {
             if(!ModelState.IsValid)
@@ -77,7 +79,8 @@ namespace Vidly.Controllers
             return RedirectToAction("Index", "Customers");
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
+        [Authorize(Roles = RoleName.CanManageCustomers)]
+        [Authorize(Roles = RoleName.CanManageAll)]
         public ActionResult Edit(int Id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == Id);

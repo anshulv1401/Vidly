@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Data.Entity;
-using System.Web;
+using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
@@ -27,7 +25,7 @@ namespace Vidly.Controllers
         public ActionResult Index()
         {
             //List<Movie> movies = _context.Movies.Include(x => x.Genre).ToList();
-            if(User.IsInRole(RoleName.CanManageMovies))
+            if(User.IsInRole(RoleName.CanManageMovies) || User.IsInRole(RoleName.CanManageAll))
                 return View("List");
 
             return View("ReadOnlyList");
@@ -44,6 +42,7 @@ namespace Vidly.Controllers
         }
 
         [Authorize(Roles = RoleName.CanManageMovies)]
+        [Authorize(Roles = RoleName.CanManageAll)]
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();
@@ -57,6 +56,7 @@ namespace Vidly.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = RoleName.CanManageMovies)]
+        [Authorize(Roles = RoleName.CanManageAll)]
         public ActionResult Save(Movie movie)
         {
             if (!ModelState.IsValid)
@@ -86,6 +86,7 @@ namespace Vidly.Controllers
         }
 
         [Authorize(Roles = RoleName.CanManageMovies)]
+        [Authorize(Roles = RoleName.CanManageAll)]
         public ActionResult Edit(int Id)
         {
             var movie = _context.Movies.SingleOrDefault(c => c.Id == Id);
