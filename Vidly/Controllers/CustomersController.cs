@@ -1,5 +1,7 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Runtime.Caching;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
@@ -21,6 +23,11 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
+            if (MemoryCache.Default["Genres"] == null)//Use this techque only after doing performace profiling and when it is required. Don't using it blindly.
+            {
+                MemoryCache.Default["Genres"] = _context.Genres.ToList();
+            }
+            var genres = MemoryCache.Default["Genres"] as IEnumerable<Genre>;
             if (User.IsInRole(RoleName.CanManageCustomers) || User.IsInRole(RoleName.CanManageAll))
                 return View("List");
 

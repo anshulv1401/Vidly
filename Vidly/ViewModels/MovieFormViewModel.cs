@@ -47,7 +47,7 @@ namespace Vidly.ViewModels
             Id = movie.Id;
             Name = movie.Name;
             ReleaseDate = movie.ReleaseDate;
-            Stock = movie.Stock;
+            Stock = movie.NumberInStock;
             GenreId = movie.GenreId;
         }
     }

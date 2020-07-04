@@ -236,4 +236,10 @@ C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.csproj.Core
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.pdb
-C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Glimpse.Ado.dll
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Glimpse.AspNet.dll
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Glimpse.Core.dll
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Glimpse.EF6.dll
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Glimpse.Mvc5.dll
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.Migrations.rentalModelAdded.resources
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.Migrations.NumberAvailableColumnAddedInMovie.resources

@@ -27,6 +27,6 @@ namespace Vidly.Dtos
 
         [Required]
         [Range(1, 20)]
-        public byte Stock { get; set; }
+        public byte NumberInStock { get; set; }
     }
 }
