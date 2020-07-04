@@ -43,8 +43,7 @@ namespace Vidly.Controllers.Api
 
         //Post /api/customers
         [HttpPost]
-        [Authorize(Roles = RoleName.CanManageCustomers)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.CustomerManager)]
         public IHttpActionResult CreateCustomer(CustomerDto customerDto)
         {
             if (!ModelState.IsValid)
@@ -60,8 +59,7 @@ namespace Vidly.Controllers.Api
         //Put /api/customers/1
         [HttpPut]
         [ResponseType(typeof(void))]
-        [Authorize(Roles = RoleName.CanManageCustomers)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.CustomerManager)]
         public IHttpActionResult UpdateCustomer(int Id, CustomerDto customerDto)
         {
             if (!ModelState.IsValid)
@@ -79,8 +77,7 @@ namespace Vidly.Controllers.Api
         //DELETE /api/customers/1
         [HttpDelete]
         [ResponseType(typeof(void))]
-        [Authorize(Roles = RoleName.CanManageCustomers)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.CustomerManager)]
         public IHttpActionResult DeleteCustomer(int Id)
         {
             var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == Id);

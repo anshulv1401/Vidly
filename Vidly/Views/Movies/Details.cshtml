@@ -1,12 +1,29 @@
-﻿@model Vidly.Models.Movie
+﻿@model Vidly.ViewModels.MovieFormViewModel
 @{
-    ViewBag.Title = "Customers";
+    ViewBag.Title = "Movie";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div><h2>@Model.Name</h2></div>
+<h2>@Model.Name</h2>
 <ul>
-    <li>Genre: @Model.Genre.Name</li>
-    <li>Release Date: @Model.ReleaseDate.ToLongDateString()</li>
-    <li>Date Added: @Model.CreatedDate.ToLongDateString()</li>
-    <li>Number in Stock: @Model.Stock</li>
+        <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @readonly = "readonly" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ReleaseDate)
+        @Html.TextBoxFor(m => m.ReleaseDate, "{0:d MMM yyyy}", new { @class = "form-control", @readonly = "readonly" })
+        @Html.ValidationMessageFor(m => m.ReleaseDate)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GenreId)
+        @Html.DropDownListFor(m => m.GenreId, new SelectList(Model.Genres, "Id", "Name"), "-Select-", new { @class = "form-control", @readonly = "readonly" })
+        @Html.ValidationMessageFor(m => m.GenreId)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Stock)
+        @Html.TextBoxFor(m => m.Stock, new { @class = "form-control", @readonly = "readonly" })
+        @Html.ValidationMessageFor(m => m.Stock)
+    </div>
+
 </ul>

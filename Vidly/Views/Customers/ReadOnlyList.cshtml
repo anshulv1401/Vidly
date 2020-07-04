@@ -26,7 +26,10 @@
                 },
                 columns: [
                     {
-                        data: "name"
+                        data: "name",
+                        render: function (data, type, customer) {
+                            return "<a href='/customers/view/" + customer.id + "'>" + customer.name + "</a>";
+                        }
                     },
                     {
                         data: "membershipType.name"

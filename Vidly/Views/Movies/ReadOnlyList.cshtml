@@ -27,7 +27,10 @@
                 },
                 columns: [
                     {
-                        data: "name"
+                        data: "name",
+                        render: function (data, type, movie) {
+                            return "<a href='/movies/view/" + movie.id + "'>" + movie.name + "</a>";
+                        }
                     },
                     {
                         data: "genre.name"

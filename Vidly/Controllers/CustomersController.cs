@@ -37,8 +37,7 @@ namespace Vidly.Controllers
                 return View(Model);
         }
 
-        [Authorize(Roles = RoleName.CanManageCustomers)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.CustomerManager)]
         public ActionResult New()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
@@ -52,8 +51,7 @@ namespace Vidly.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = RoleName.CanManageCustomers)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.CustomerManager)]
         public ActionResult Save(Customer customer)
         {
             if(!ModelState.IsValid)
@@ -79,8 +77,7 @@ namespace Vidly.Controllers
             return RedirectToAction("Index", "Customers");
         }
 
-        [Authorize(Roles = RoleName.CanManageCustomers)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.CustomerManager)]
         public ActionResult Edit(int Id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == Id);
@@ -94,6 +91,21 @@ namespace Vidly.Controllers
                 MembershipTypes = _context.MembershipTypes.ToList()
             };
             return View("CustomerForm", viewModel);
+        }
+
+        public ActionResult View(int Id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == Id);
+
+            if (customer == null)
+                return HttpNotFound();
+
+            var viewModel = new CustomerFormViewModel()
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            };
+            return View("Details", viewModel);
         }
     }
 }

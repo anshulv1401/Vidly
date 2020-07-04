@@ -7,8 +7,10 @@ namespace Vidly.Models
 {
     public static class RoleName
     {
+        public const string CanManageAll = "CanManageAll";
         public const string CanManageMovies = "CanManageMovie";
         public const string CanManageCustomers = "CanManageCustomers";
-        public const string CanManageAll = "CanManageAll";
+        public const string MovieManager = CanManageMovies + "," + CanManageAll;
+        public const string CustomerManager = CanManageCustomers + "," + CanManageAll;
     }
 }

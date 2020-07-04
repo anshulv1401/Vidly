@@ -41,8 +41,7 @@ namespace Vidly.Controllers
                 return View(Model);
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.MovieManager)]
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();
@@ -55,8 +54,7 @@ namespace Vidly.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = RoleName.CanManageMovies)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.MovieManager)]
         public ActionResult Save(Movie movie)
         {
             if (!ModelState.IsValid)
@@ -85,8 +83,7 @@ namespace Vidly.Controllers
             return RedirectToAction("Index", "Movies");
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
-        [Authorize(Roles = RoleName.CanManageAll)]
+        [Authorize(Roles = RoleName.MovieManager)]
         public ActionResult Edit(int Id)
         {
             var movie = _context.Movies.SingleOrDefault(c => c.Id == Id);
@@ -99,6 +96,20 @@ namespace Vidly.Controllers
                 Genres = _context.Genres.ToList()
             };
             return View("MovieForm", viewModel);
+        }
+
+        public ActionResult View(int Id)
+        {
+            var movie = _context.Movies.SingleOrDefault(c => c.Id == Id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            var viewModel = new MovieFormViewModel(movie)
+            {
+                Genres = _context.Genres.ToList()
+            };
+            return View("Details", viewModel);
         }
     }
 }
