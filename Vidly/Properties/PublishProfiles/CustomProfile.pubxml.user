@@ -9,11 +9,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>C:\Vidly</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="AppSettings.config">
+      <publishTime>07/05/2020 17:06:48</publishTime>
+    </File>
     <File Include="App_Data/DefaultConnection.mdf">
-      <publishTime>07/05/2020 14:59:51</publishTime>
+      <publishTime>07/05/2020 16:51:05</publishTime>
     </File>
     <File Include="App_Data/DefaultConnection_log.ldf">
-      <publishTime>07/05/2020 14:59:51</publishTime>
+      <publishTime>07/05/2020 16:51:05</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>01/06/2020 12:08:12</publishTime>
@@ -46,7 +49,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2020 12:08:13</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
-      <publishTime>11/12/2019 18:47:54</publishTime>
+      <publishTime>12/11/2019 18:47:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
       <publishTime>02/13/2015 13:16:38</publishTime>
@@ -55,7 +58,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2020 12:08:13</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
-      <publishTime>11/12/2019 18:45:54</publishTime>
+      <publishTime>12/11/2019 18:45:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
       <publishTime>02/13/2015 13:16:40</publishTime>
@@ -247,10 +250,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2020 12:08:12</publishTime>
     </File>
     <File Include="bin/Vidly.dll">
-      <publishTime>07/05/2020 14:59:50</publishTime>
+      <publishTime>07/05/2020 17:11:12</publishTime>
     </File>
     <File Include="bin/Vidly.pdb">
-      <publishTime>07/05/2020 14:59:50</publishTime>
+      <publishTime>07/05/2020 17:11:12</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/06/2020 12:08:13</publishTime>
@@ -631,22 +634,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2020 12:08:12</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>07/05/2020 14:28:33</publishTime>
+      <publishTime>05/07/2020 14:28:33</publishTime>
     </File>
     <File Include="Content/toastr.css">
-      <publishTime>07/05/2020 14:13:47</publishTime>
+      <publishTime>05/07/2020 14:13:47</publishTime>
     </File>
     <File Include="Content/toastr.less">
-      <publishTime>07/05/2020 14:13:47</publishTime>
+      <publishTime>05/07/2020 14:13:47</publishTime>
     </File>
     <File Include="Content/toastr.min.css">
-      <publishTime>07/05/2020 14:13:47</publishTime>
+      <publishTime>05/07/2020 14:13:47</publishTime>
     </File>
     <File Include="Content/toastr.scss">
-      <publishTime>07/05/2020 14:13:47</publishTime>
+      <publishTime>05/07/2020 14:13:47</publishTime>
     </File>
     <File Include="Content/typeahead.css">
-      <publishTime>07/05/2020 12:45:32</publishTime>
+      <publishTime>05/07/2020 12:45:32</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>01/06/2020 12:08:12</publishTime>
@@ -655,10 +658,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2020 12:08:12</publishTime>
     </File>
     <File Include="Scripts/bloodhound.js">
-      <publishTime>07/05/2020 00:40:12</publishTime>
+      <publishTime>05/07/2020 00:40:12</publishTime>
     </File>
     <File Include="Scripts/bloodhound.min.js">
-      <publishTime>07/05/2020 00:40:12</publishTime>
+      <publishTime>05/07/2020 00:40:12</publishTime>
     </File>
     <File Include="Scripts/bootbox.js">
       <publishTime>01/06/2020 12:08:12</publishTime>
@@ -1159,22 +1162,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2020 12:08:12</publishTime>
     </File>
     <File Include="Scripts/toastr.js">
-      <publishTime>07/05/2020 14:13:47</publishTime>
+      <publishTime>05/07/2020 14:13:47</publishTime>
     </File>
     <File Include="Scripts/toastr.min.js">
-      <publishTime>07/05/2020 14:13:47</publishTime>
+      <publishTime>05/07/2020 14:13:47</publishTime>
     </File>
     <File Include="Scripts/typeahead.bundle.js">
-      <publishTime>07/05/2020 00:40:12</publishTime>
+      <publishTime>05/07/2020 00:40:12</publishTime>
     </File>
     <File Include="Scripts/typeahead.bundle.min.js">
-      <publishTime>07/05/2020 00:40:12</publishTime>
+      <publishTime>05/07/2020 00:40:12</publishTime>
     </File>
     <File Include="Scripts/typeahead.jquery.js">
-      <publishTime>07/05/2020 00:40:12</publishTime>
+      <publishTime>05/07/2020 00:40:12</publishTime>
     </File>
     <File Include="Scripts/typeahead.jquery.min.js">
-      <publishTime>07/05/2020 00:40:12</publishTime>
+      <publishTime>05/07/2020 00:40:12</publishTime>
     </File>
     <File Include="Scripts/umd/popper-utils.js">
       <publishTime>01/06/2020 12:08:12</publishTime>
@@ -1207,49 +1210,49 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/09/2020 00:15:16</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
-      <publishTime>07/04/2020 17:49:03</publishTime>
+      <publishTime>04/07/2020 17:49:03</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginFailure.cshtml">
       <publishTime>01/09/2020 00:15:16</publishTime>
     </File>
     <File Include="Views/Account/ForgotPassword.cshtml">
-      <publishTime>07/04/2020 17:49:10</publishTime>
+      <publishTime>04/07/2020 17:49:10</publishTime>
     </File>
     <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
       <publishTime>01/09/2020 00:15:16</publishTime>
     </File>
     <File Include="Views/Account/Login.cshtml">
-      <publishTime>07/04/2020 17:49:17</publishTime>
+      <publishTime>04/07/2020 17:49:17</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
-      <publishTime>07/04/2020 17:49:23</publishTime>
+      <publishTime>04/07/2020 17:49:23</publishTime>
     </File>
     <File Include="Views/Account/ResetPassword.cshtml">
-      <publishTime>07/04/2020 17:49:27</publishTime>
+      <publishTime>04/07/2020 17:49:27</publishTime>
     </File>
     <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
       <publishTime>01/09/2020 00:15:16</publishTime>
     </File>
     <File Include="Views/Account/SendCode.cshtml">
-      <publishTime>07/04/2020 17:49:33</publishTime>
+      <publishTime>04/07/2020 17:49:33</publishTime>
     </File>
     <File Include="Views/Account/VerifyCode.cshtml">
-      <publishTime>07/04/2020 17:49:38</publishTime>
+      <publishTime>04/07/2020 17:49:38</publishTime>
     </File>
     <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
-      <publishTime>07/04/2020 17:48:26</publishTime>
+      <publishTime>04/07/2020 17:48:26</publishTime>
     </File>
     <File Include="Views/Customers/CustomerForm.cshtml">
       <publishTime>01/06/2020 12:08:12</publishTime>
     </File>
     <File Include="Views/Customers/Details.cshtml">
-      <publishTime>07/04/2020 18:38:10</publishTime>
+      <publishTime>04/07/2020 18:38:10</publishTime>
     </File>
     <File Include="Views/Customers/List.cshtml">
       <publishTime>03/10/2020 07:06:30</publishTime>
     </File>
     <File Include="Views/Customers/ReadOnlyList.cshtml">
-      <publishTime>07/04/2020 18:33:57</publishTime>
+      <publishTime>04/07/2020 18:33:57</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>01/06/2020 12:08:12</publishTime>
@@ -1279,7 +1282,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/09/2020 00:15:16</publishTime>
     </File>
     <File Include="Views/Movies/Details.cshtml">
-      <publishTime>07/04/2020 18:30:41</publishTime>
+      <publishTime>04/07/2020 18:30:41</publishTime>
     </File>
     <File Include="Views/Movies/List.cshtml">
       <publishTime>03/10/2020 08:31:03</publishTime>
@@ -1291,19 +1294,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2020 12:08:12</publishTime>
     </File>
     <File Include="Views/Movies/ReadOnlyList.cshtml">
-      <publishTime>07/04/2020 18:12:51</publishTime>
+      <publishTime>04/07/2020 18:12:51</publishTime>
     </File>
     <File Include="Views/Rentals/New.cshtml">
-      <publishTime>07/05/2020 14:48:05</publishTime>
+      <publishTime>05/07/2020 14:48:05</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>01/06/2020 12:08:12</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/05/2020 14:05:08</publishTime>
+      <publishTime>05/07/2020 14:05:08</publishTime>
     </File>
     <File Include="Views/Shared/_NavBar.cshtml">
-      <publishTime>07/05/2020 00:31:35</publishTime>
+      <publishTime>05/07/2020 00:31:35</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>01/06/2020 12:08:12</publishTime>
@@ -1312,7 +1315,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2020 12:08:12</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/05/2020 14:59:51</publishTime>
+      <publishTime>07/05/2020 17:11:13</publishTime>
     </File>
   </ItemGroup>
 </Project>
