@@ -240,3 +240,4 @@ C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.Migrations.
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.Migrations.NumberAvailableColumnAddedInMovie.resources
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\bin\Elmah.dll
+C:\Users\Anshul.vanawat\Documents\GitHub\Vidly\Vidly\obj\Debug\Vidly.Migrations.UniDBSchema.resources

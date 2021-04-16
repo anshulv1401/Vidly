@@ -266,6 +266,10 @@
     <Compile Include="Migrations\202007041820571_NumberAvailableColumnAddedInMovie.designer.cs">
       <DependentUpon>202007041820571_NumberAvailableColumnAddedInMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104140830377_UniDB Schema.cs" />
+    <Compile Include="Migrations\202104140830377_UniDB Schema.designer.cs">
+      <DependentUpon>202104140830377_UniDB Schema.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -725,6 +729,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007041820571_NumberAvailableColumnAddedInMovie.resx">
       <DependentUpon>202007041820571_NumberAvailableColumnAddedInMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104140830377_UniDB Schema.resx">
+      <DependentUpon>202104140830377_UniDB Schema.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
