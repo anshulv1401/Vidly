@@ -28,10 +28,10 @@ namespace Vidly.Controllers
                 MemoryCache.Default["Genres"] = _context.Genres.ToList();
             }
             var genres = MemoryCache.Default["Genres"] as IEnumerable<Genre>;
-            if (User.IsInRole(RoleName.CanManageCustomers) || User.IsInRole(RoleName.CanManageAll))
+            //if (User.IsInRole(RoleName.CanManageCustomers) || User.IsInRole(RoleName.CanManageAll))
                 return View("List");
 
-            return View("ReadOnlyList");
+            //return View("ReadOnlyList");
         }
 
         public ActionResult Details(int Id)
@@ -43,8 +43,7 @@ namespace Vidly.Controllers
             else
                 return View(Model);
         }
-
-        [Authorize(Roles = RoleName.CustomerManager)]
+        
         public ActionResult New()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
@@ -58,7 +57,7 @@ namespace Vidly.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = RoleName.CustomerManager)]
+        //[Authorize(Roles = RoleName.CustomerManager)]
         public ActionResult Save(Customer customer)
         {
             if(!ModelState.IsValid)
